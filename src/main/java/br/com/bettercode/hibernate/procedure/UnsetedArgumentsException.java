@@ -1,4 +1,4 @@
-package br.com.ctbc.api.hibernate.procedure;
+package br.com.bettercode.hibernate.procedure;
 
 public final class UnsetedArgumentsException extends RuntimeException {
 

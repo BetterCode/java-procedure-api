@@ -1,7 +1,7 @@
 /*
  *
  */
-package br.com.ctbc.api.hibernate.procedure;
+package br.com.bettercode.hibernate.procedure;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

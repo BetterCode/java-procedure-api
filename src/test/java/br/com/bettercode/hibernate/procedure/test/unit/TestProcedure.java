@@ -1,4 +1,4 @@
-package br.com.ctbc.api.hibernate.procedure.test.unit;
+package br.com.bettercode.hibernate.procedure.test.unit;
 
 import static org.junit.Assert.*;
 
@@ -10,9 +10,9 @@ import javax.persistence.PersistenceContext;
 import org.hibernate.Session;
 import org.junit.Test;
 
-import br.com.ctbc.api.hibernate.procedure.Procedure;
-import br.com.ctbc.api.hibernate.procedure.ProcedureResult;
-import br.com.ctbc.api.hibernate.procedure.SqlType;
+import br.com.bettercode.hibernate.procedure.Procedure;
+import br.com.bettercode.hibernate.procedure.ProcedureResult;
+import br.com.bettercode.hibernate.procedure.SqlType;
 
 
 public class TestProcedure {

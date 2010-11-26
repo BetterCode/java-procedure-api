@@ -1,4 +1,4 @@
-package br.com.ctbc.api.hibernate.procedure;
+package br.com.bettercode.hibernate.procedure;
 
 import java.math.BigInteger;
 import java.sql.Types;

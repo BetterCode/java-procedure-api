@@ -1,10 +1,10 @@
-package br.com.ctbc.api.hibernate.procedure.test.unit;
+package br.com.bettercode.hibernate.procedure.test.unit;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import br.com.ctbc.api.hibernate.procedure.WithAliasResultTransformer;
+import br.com.bettercode.hibernate.procedure.WithAliasResultTransformer;
 
 /**
  * @author Luiz Fernando Signorelli

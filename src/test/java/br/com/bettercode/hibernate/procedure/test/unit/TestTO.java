@@ -1,4 +1,4 @@
-package br.com.ctbc.api.hibernate.procedure.test.unit;
+package br.com.bettercode.hibernate.procedure.test.unit;
 
 import javax.persistence.Column;
 
