@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+	<!--
+		Log4j Configuration | For more configuration infromation and examples see the Jakarta Log4j | owebsite:
+		http://jakarta.apache.org/log4j
+	-->
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+	<!-- ============================== -->
+	<!-- Append messages to the console -->
+	<!-- ============================== -->
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<param name="Threshold" value="INFO" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- The default pattern: Date Priority [Category] Message\n -->
+			<param name="ConversionPattern" value="%d{ABSOLUTE} %-5p [%c] %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="bindingHibernate" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="Hibernate: %m%n" />
+		</layout>
+
+		<filter class="org.apache.log4j.varia.StringMatchFilter">
+			<param name="StringToMatch" value="binding" />
+			<param name="AcceptOnMatch" value="true" />
+		</filter>
+
+		<filter class="org.apache.log4j.varia.DenyAllFilter" />
+	</appender>
+
+
+
+	<!-- ================ -->
+	<!-- Limit categories -->
+	<!-- ================ -->
+
+	<category name="org.hibernate.type">
+		<priority value="TRACE" />
+		<appender-ref ref="bindingHibernate" />
+	</category>
+
+	<category name="org.hibernate">
+		<priority value="ERROR" />
+	</category>
+
+	<category name="org.springframework">
+		<priority value="ERROR" />
+	</category>
+
+	<category name="org.apache.commons.beanutils">
+		<priority value="ERROR" />
+	</category>
+
+	<root>
+		<appender-ref ref="CONSOLE" />
+	</root>
+
+</log4j:configuration>
