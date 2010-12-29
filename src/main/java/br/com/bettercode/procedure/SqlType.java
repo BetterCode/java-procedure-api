@@ -1,4 +1,4 @@
-package br.com.bettercode.hibernate.procedure;
+package br.com.bettercode.procedure;
 
 import java.math.BigInteger;
 import java.sql.Types;

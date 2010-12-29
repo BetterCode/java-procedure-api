@@ -10,9 +10,9 @@ import javax.persistence.PersistenceContext;
 import org.hibernate.Session;
 import org.junit.Test;
 
-import br.com.bettercode.hibernate.procedure.Procedure;
-import br.com.bettercode.hibernate.procedure.ProcedureResult;
-import br.com.bettercode.hibernate.procedure.SqlType;
+import br.com.bettercode.procedure.Procedure;
+import br.com.bettercode.procedure.ProcedureResult;
+import br.com.bettercode.procedure.SqlType;
 
 
 public class TestProcedure {

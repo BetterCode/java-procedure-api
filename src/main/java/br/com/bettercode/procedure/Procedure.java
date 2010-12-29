@@ -1,4 +1,4 @@
-package br.com.bettercode.hibernate.procedure;
+package br.com.bettercode.procedure;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
@@ -17,6 +17,8 @@ import org.hibernate.Session;
 import org.hibernate.impl.SessionImpl;
 import org.hibernate.jdbc.Work;
 
+
+import br.com.bettercode.resulttransformer.ResultSetMapper;
 
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;

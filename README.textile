@@ -1,8 +1,8 @@
 h2. INSTALLATION
 
 <pre>
-<code>git clone git://github.com/BetterCode/hibernate-procedure-api.git
-cd hibernate-procedure-api
+<code>git clone git://github.com/BetterCode/java-procedure-api.git
+cd java-procedure-api
 mvn install</code>
 </pre>
 
@@ -14,8 +14,8 @@ Just put this in your pom.xml:
 <code>
 <dependency>
 	<groupId>bettercode</groupId>
-	<artifactId>hibernate-procedure-api</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<artifactId>java-procedure-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 </code>
 </pre>

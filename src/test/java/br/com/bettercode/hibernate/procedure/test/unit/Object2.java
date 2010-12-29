@@ -1,10 +1,10 @@
 package br.com.bettercode.hibernate.procedure.test.unit;
 
-import javax.persistence.Column;
+import br.com.bettercode.resulttransformer.Columns;
 
-public class TestTO {
+public class Object2 {
 	
-	@Column(name = TestWithAliasResultTransformer.FIELD1_NAME)
+	@Columns(names = {"galo","atletico"})
 	private String f1;
 
 	private Integer f2;

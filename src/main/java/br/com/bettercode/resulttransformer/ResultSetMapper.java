@@ -1,4 +1,4 @@
-package br.com.bettercode.hibernate.procedure;
+package br.com.bettercode.resulttransformer;
 
 import java.lang.reflect.Field;
 import java.sql.ResultSet;
@@ -12,6 +12,7 @@ import java.util.Map.Entry;
 
 import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.log4j.Logger;
+
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
@@ -175,7 +176,7 @@ public class ResultSetMapper {
 
 		for (Field field : type.getDeclaredFields()) {
 
-			if (field.isAnnotationPresent(ColumnAliases.class)) {
+			if (field.isAnnotationPresent(Columns.class)) {
 				// Anotação presente
 
 				// Recupera os nomes de colunas SQL's associadas à propridade
@@ -193,7 +194,7 @@ public class ResultSetMapper {
 	 */
 	private static String[] retrieveColumnNames(Field field) {
 
-		final String[] names = field.getAnnotation(ColumnAliases.class).nameAliases();
+		final String[] names = field.getAnnotation(Columns.class).names();
 
 		if (names != null) {
 			return names;
